@@ -3,9 +3,9 @@
 //Math.floor()
 //Caso pontos maior que 12, perde a carteira
 
-let velocidade = velocimetro(75
-
-)
+// Minha solução
+// let velocidade = velocimetro(75)
+/*
 console.log(velocidade)
 
 function velocimetro(radar) {
@@ -48,4 +48,24 @@ function velocimetro(radar) {
     if (radar >= 135 ){
         return 'Carteira Suspensa'
     }
+}
+*/
+
+//Solução do curso
+
+verificarVelocidade(84);
+
+function verificarVelocidade(velocidade) {
+    const velocidadeMaxima = 70;
+    const kmPorPonto = 5;
+    
+    if (velocidade<= velocidadeMaxima) {
+        console.log('Ok')
+    } else {
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / kmPorPonto))
+        if(pontos >= 12)
+            console.log('Carteira suspensa!')
+        else
+            console.log(`Você recebeu ${pontos} pontos em sua CNH`)
+        }
 }
