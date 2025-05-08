@@ -3,8 +3,8 @@
 // 2 - Encontrar elementos
 // 3 - Remover elementos
 // 4 - Esvaziar elementos
-// 5 - Dividir arrays
-// 6 - Combinar arrays
+// 5 - Combinar arrays
+// 6 - Dividir arrays
 
 // 1 - Add novos elementos
 const numeros1 = [1,2,3];
@@ -95,3 +95,18 @@ while (numeros4.length > 0)
 console.log(numeros4);
 console.log(outros);
 */
+
+// 5 - Combinar arrays
+
+const primeiroArray = [1,2,3]
+const segundoArray = [4,5,6]
+
+const combinado = primeiroArray.concat(segundoArray);
+console.log(combinado);
+
+// 6 - Dividir arrays
+
+const cortado = combinado.slice(1,3);
+console.log(cortado);
+
+// Operador Spread
